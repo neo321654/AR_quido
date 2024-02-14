@@ -42,7 +42,7 @@ class BoxRenderer {
         + "\n")
 
     init {
-        val boxColor = floatArrayOf(0.8f, 0.8f, 1f, 0.4f)
+        val boxColor = floatArrayOf(0.2f, 0.7f, 1f, 0.9f)
         currentContext = (EGLContext.getEGL() as EGL10).eglGetCurrentContext()
         programBox = GLES30.glCreateProgram()
         val vertShader = GLES30.glCreateShader(GLES30.GL_VERTEX_SHADER).also {
