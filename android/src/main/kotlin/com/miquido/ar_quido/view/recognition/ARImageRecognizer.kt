@@ -193,7 +193,7 @@ class ARImageRecognizer(private val imageNames: List<String>) {
                                 targetScale,
                                 targetScale * targetImg.height() / targetImg.width()
                             )
-                            recognitionListener?.onDetected(imagetarget.name())
+                            recognitionListener?.onDetected(imagetarget.name()+ "dsd")
                             boxRenderer?.render(projectionMatrix, targetInstance.pose(), scale)
                             images.forEach { it.dispose() }
                         }
