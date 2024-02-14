@@ -21,6 +21,7 @@ class BoxRenderer {
     private val posProjBox: Int
     private val vboCoordBox: Int
     private val vboFacesBox: Int
+    //dfdf
 
     private val box_vert = ("uniform mat4 trans;\n"
         + "uniform mat4 proj;\n"
@@ -42,7 +43,7 @@ class BoxRenderer {
         + "\n")
 
     init {
-        val boxColor = floatArrayOf(0.2f, 0.7f, 1f, 0.9f)
+        val boxColor = floatArrayOf(0.1f, 0.8f, 1f, 0.4f)
         currentContext = (EGLContext.getEGL() as EGL10).eglGetCurrentContext()
         programBox = GLES30.glCreateProgram()
         val vertShader = GLES30.glCreateShader(GLES30.GL_VERTEX_SHADER).also {
