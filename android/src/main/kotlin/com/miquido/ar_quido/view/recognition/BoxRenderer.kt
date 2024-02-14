@@ -87,7 +87,7 @@ class BoxRenderer {
         val size1 = size.data[1]
 
         GLES30.glBindBuffer(GLES30.GL_ARRAY_BUFFER, vboCoordBox)
-        val height = size0 / 1000
+        val height = size0 / 10000
         val cubeVertices = arrayOf(
             /* +z */
             floatArrayOf(size0 / 2, size1 / 2, height / 2),
