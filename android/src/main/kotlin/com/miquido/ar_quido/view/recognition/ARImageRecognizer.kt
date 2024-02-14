@@ -191,7 +191,7 @@ class ARImageRecognizer(private val imageNames: List<String>) {
                             val targetScale = imagetarget.scale()
                             val scale = Vec2F(
                                 targetScale,
-                                targetScale * targetImg.height() / targetImg.width()
+                                targetScale * (targetImg.height()-100) / (targetImg.width()-100)
                             )
                             recognitionListener?.onDetected(imagetarget.name()+ "dsd")
                             boxRenderer?.render(projectionMatrix, targetInstance.pose(), scale)
